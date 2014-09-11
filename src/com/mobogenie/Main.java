@@ -63,7 +63,7 @@ public class Main extends HttpServlet {
     context.setContextPath("/");
     server.setHandler(context);
     context.addServlet(new ServletHolder(new Main()),"/*");
-//    server.Start();
+    server.Start();
     server.join();
   }
 }
